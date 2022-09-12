@@ -23,4 +23,4 @@ runs:
             break
           fi
           cd ..
-        done | LANG=C sort | xargs cat >> "${GITHUB_ENV}"
+        done | tac | xargs cat >> "${GITHUB_ENV}"
