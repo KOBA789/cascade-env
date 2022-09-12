@@ -5,11 +5,15 @@ inputs:
     description: 'file contains environment variables'
     required: true
     default: 'env'
+  working-directory:
+    description: 'working directory'
+    required: false
 
 runs:
   using: 'composite'
   steps:
     - shell: bash
+      working-directory: ${{ inputs.working-directory }}
       run: |
         while :; do
           if [[ -e "${PWD}/env" ]]; then

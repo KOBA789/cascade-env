@@ -7,7 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: KOBA789/cascadenv@v0.0.2
-        working-directory: foo/bar
+        with:
+          working-directory: foo/bar
       - shell: bash
         run: |
           set -ue
