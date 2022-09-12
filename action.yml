@@ -1,5 +1,5 @@
-name: 'cascade-env'
-description: 'Set environment variabels in cascading fashion'
+name: 'cascadenv'
+description: 'Set environment variables in cascading fashion'
 inputs:
   envfile:
     description: 'file contains environment variables'

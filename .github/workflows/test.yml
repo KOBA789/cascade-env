@@ -1,0 +1,16 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test self
+    steps:
+      - uses: actions/checkout@v3
+      - uses: KOBA789/cascadenv@v0
+      - shell: bash
+        run: |
+          set -ue
+          [[ "$ROOT" == 1 ]]
+          [[ "$FOO" == 1 ]]
+          [[ "$FOO_EXTRA" == 1 ]]
+          [[ "$BAR" == 1 ]]
