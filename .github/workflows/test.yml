@@ -6,7 +6,7 @@ jobs:
     name: Test self
     steps:
       - uses: actions/checkout@v3
-      - uses: KOBA789/cascadenv@v0
+      - uses: KOBA789/cascadenv@v0.0.2
       - shell: bash
         run: |
           set -ue
