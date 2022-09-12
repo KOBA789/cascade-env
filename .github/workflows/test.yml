@@ -4,10 +4,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: Test self
-    working-directory: foo/bar
     steps:
       - uses: actions/checkout@v3
       - uses: KOBA789/cascadenv@v0.0.2
+        working-directory: foo/bar
       - shell: bash
         run: |
           set -ue
