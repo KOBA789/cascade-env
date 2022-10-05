@@ -4,7 +4,7 @@ inputs:
   envfile:
     description: 'file contains environment variables'
     required: true
-    default: 'env'
+    default: '.env'
   working-directory:
     description: 'working directory'
     required: false
